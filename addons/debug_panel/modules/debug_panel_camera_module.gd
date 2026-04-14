@@ -7,10 +7,10 @@ var _camera: Camera3D
 var _spring: Node3D
 var _player: Node3D
 
-var _distance: float = 16.0
-var _height: float = 4.0
-var _pitch_deg: float = -15.0
-var _fov: float = 75.0
+var _distance: float = 13.0
+var _height: float = 7.5
+var _pitch_deg: float = -23.0
+var _fov: float = 50.0
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
