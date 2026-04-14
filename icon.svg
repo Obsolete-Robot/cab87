@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#1a1a2e"/>
+  
+  <!-- Tower silhouette -->
+  <path d="M44 120 L44 40 L54 30 L64 20 L74 30 L84 40 L84 120 Z" fill="#2d2d4a"/>
+  
+  <!-- Windows -->
+  <rect x="50" y="45" width="8" height="10" fill="#ffd700" opacity="0.8"/>
+  <rect x="70" y="45" width="8" height="10" fill="#ffd700" opacity="0.8"/>
+  <rect x="50" y="65" width="8" height="10" fill="#ffd700" opacity="0.8"/>
+  <rect x="70" y="65" width="8" height="10" fill="#ffd700" opacity="0.8"/>
+  <rect x="50" y="85" width="8" height="10" fill="#ff4444" opacity="0.9"/>
+  <rect x="70" y="85" width="8" height="10" fill="#ff4444" opacity="0.9"/>
+  
+  <!-- M badge -->
+  <circle cx="64" cy="64" r="18" fill="#c9302c"/>
+  <text x="64" y="72" text-anchor="middle" font-family="Arial Black" font-size="24" fill="white" font-weight="bold">M</text>
+  
+  <!-- Arrow up/down -->
+  <path d="M20 50 L28 40 L36 50" stroke="#00ff88" stroke-width="3" fill="none"/>
+  <path d="M92 78 L100 88 L108 78" stroke="#ff6b6b" stroke-width="3" fill="none"/>
+</svg>

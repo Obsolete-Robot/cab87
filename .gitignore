@@ -1,0 +1,6 @@
+.godot/
+.import/
+export/
+# OS junk
+.DS_Store
+Thumbs.db
