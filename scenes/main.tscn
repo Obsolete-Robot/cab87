@@ -2,6 +2,12 @@
 
 [ext_resource type="Script" path="res://scripts/city_generator.gd" id="1"]
 [ext_resource type="PackedScene" path="res://scenes/player_car.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://addons/debug_panel/debug_panel.tscn" id="3"]
+
+[sub_resource type="Environment" id="1"]
+background_mode = 1
+background_color = Color(0.45, 0.6, 0.9, 1)
+ambient_light_energy = 0.6
 
 [node name="Main" type="Node3D"]
 
@@ -13,6 +19,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.866025, 0.25, -0.433012, 0, 0.866025, 0.5, 0.5, -0.433012, 0.75, 0, 20, 0)
-light_energy = 1.2
+light_energy = 3.0
 
 [node name="CameraPivot" type="Node3D" parent="PlayerCar"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("1")
+
+[node name="DebugPanel" parent="." instance=ExtResource("3")]

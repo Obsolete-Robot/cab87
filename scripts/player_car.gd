@@ -61,7 +61,7 @@ func _apply_steering(input: float, delta: float) -> void:
 	var direction: float = 1.0
 	if _target_speed < 0.0:
 		direction = -1.0
-	var steer_amount: float = steering_speed * input * delta * float(clamp(speed / max_speed, 0.25, 1.0))
+	var steer_amount: float = -steering_speed * input * delta * float(clamp(speed / max_speed, 0.25, 1.0))
 	rotate_y(steer_amount * direction)
 
 func _apply_drift_and_friction(handbrake: bool, delta: float) -> void:

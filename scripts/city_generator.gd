@@ -41,7 +41,7 @@ func _create_block(origin: Vector3) -> void:
 	road.position = origin + Vector3(0.0, -0.1, 0.0)
 
 	var road_mat := StandardMaterial3D.new()
-	road_mat.albedo_color = Color(0.08, 0.08, 0.1)
+	road_mat.albedo_color = Color(0.3, 0.3, 0.35)
 	road_mat.roughness = 0.9
 	road.material_override = road_mat
 
@@ -72,7 +72,7 @@ func _create_block(origin: Vector3) -> void:
 		building.position = origin + offset
 
 		var mat := StandardMaterial3D.new()
-		mat.albedo_color = Color.from_hsv(_rng.randf(), 0.45, _rng.randf_range(0.4, 0.9))
+		mat.albedo_color = Color.from_hsv(_rng.randf(), 0.5, _rng.randf_range(0.7, 1.0))
 		mat.metallic = 0.05
 		mat.roughness = 0.75
 		building.material_override = mat

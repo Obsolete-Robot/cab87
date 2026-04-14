@@ -13,10 +13,10 @@ var _sections: Dictionary[StringName, DebugCollapsibleSection] = {}
 var _body_visible: bool = false
 
 func _ready() -> void:
-	set_panel_visible(false)
+	set_panel_visible(true)
 	if _toggle_button != null:
 		_toggle_button.toggled.connect(_on_body_toggled)
-	set_body_visible(false)
+	set_body_visible(true)
 	if _template_section != null:
 		_template_section.visible = false
 	add_to_group("debug_panel")
