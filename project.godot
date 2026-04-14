@@ -32,3 +32,10 @@ textures/canvas_textures/default_texture_filter=0
 textures/decals/filter=0
 textures/light_projectors/filter=0
 environment/defaults/default_clear_color=Color(0.05, 0.05, 0.08, 1)
+
+[autoload]
+
+ServiceRegistry="*res://scripts/service_registry.gd"
+DebugPanelService="*res://addons/debug_panel/debug_panel_service.gd"
+DebugPanelBootstrap="*res://scripts/debug_panel_bootstrap.gd"
+

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfaahnp3jm0se"]
+
+[ext_resource type="Script" path="res://addons/debug_panel/debug_collapsible_section.gd" id="1"]
+
+[node name="CollapsibleSection" type="VBoxContainer"]
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+script = ExtResource("1")
+
+[node name="HeaderButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+text = "- Section"
+
+[node name="BodyContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
